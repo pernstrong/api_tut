@@ -11,10 +11,6 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(cors())
 
-// app.get('/users', (req, res) => {
-//   return res.send('GET HTTP method on user resource')
-// })
-
 app.get('/users', (req, res) => {
   return res.send(Object.values(users))
 })
